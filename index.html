@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="css/styles.css">
+       <link rel="stylesheet" href="css/normalize.css">
+       <!-- Google Font -->
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <title>Online Registration Form</title>
+</head>
+<body>
+       
+<!-- Header -->
+<header>
+ 
+       <h1 class="heading">THE CODE REVIEW</h1>
+ 
+</header>
+       
+
+       <div class="signup">
+             
+              <h2 class="signup-title">Signup for our newsletter</h2>
+              <p class="signup-p">Get the latest news on how your code is doing right in your inbox</p>
+       </div>
+
+
+       <hr class="top-line">
+       
+
+
+
+<!--  Contact Information  -->
+<div class="main-wrap"> 
+        
+       <form action="index.html" method="post">
+
+              <fieldset class="flex">
+             
+                     <legend class="contact-info">Contact Information</legend>
+              
+                     
+                     <div class="contact">
+       <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="required">
+                     </div>
+              
+                     <div class="contact">
+       <label for="mail">Email Address</label>
+              <input type="email" id="mail" name="user_email" placeholder="required">
+                     </div>
+              
+              
+              
+                     <div class="contact">
+       <label for="number">Phone Number</label>
+              <input type="tel" id="number" name="user_tel">
+                     </div>
+              
+              
+              
+              
+                     <div class="contact">
+       <label for="address">Street Address</label>
+              <input type="text" id="address" name="user_address">
+                     </div>
+             
+             
+             
+                     <div class="contact">
+       <label for="city">City</label>
+              <input type="text" name="user_city" id="city">
+                      </div>
+              
+              
+                      <div class="contact">
+       <label for="state">State</label>
+                      <select name="state" id="state" class="state-select">
+               <option value="choose">Choose State</option>              
+              <option value="california">California</option>
+              <option value="texas">Texas</option>
+              <option value="florida">Florida</option>
+              <option value="pennsylvania">Pennsylvania</option>
+              <option value="arizona">Arizona</option>
+              <option value="georgia">Georgia</option>
+              <option value="washington">Washington</option>
+              <option value="maryland">Maryland</option>
+              <option value="virginia">Virginia</option> 
+                     </select>       
+                     </div>
+
+                     <div class="contact">
+       <label class="zip" for="zip">Zip Code</label>
+                     <input type="text" name="user_zip" id="zip">
+                     </div>
+
+       </fieldset>
+
+
+
+
+<!-- Newsletter -->
+<fieldset>
+
+          <legend class="newsletter">Newsletter</legend>
+          <div class="news-letter-p">
+          <label>Choose which newsletters you would like to receive</label>
+       </div>
+
+              <div class="choice-news">
+              <input type="checkbox" id="html_news" value="html_news" name="user_html"><label for="html_news">HTML News</label>
+              </div>
+
+              <div class="choice-news">
+       <input type="checkbox" id="css_news" value="css_news" name="user_css"><label for="css_news">CSS News</label>
+              </div>
+
+              <div class="choice-news">
+              <input type="checkbox" id="javascript_news" value="javascript_news" name="user_javascript"><label for="javascript_news">Javascript News</label>
+              </div>
+              
+
+              <label class="newformat" for="html-format">Newsletter Format</label>
+                    
+              <div class="group">
+       <input type="radio" id="html-format" name="format">
+                     <label for="html-format">HTML</label>
+               </div>
+
+               <div class="group">
+                     <input type="radio" name="format" id="plain-text">
+                     <label for="plain-text">Plain text</label>
+                     </div>
+               
+              <div class="others">
+               <label for="topics" id="other">Other Topics you'd like to hear about</label>
+              </div>
+       <textarea name="user_topics" id="topics" cols="30" rows="4"></textarea>
+       <button class="button1" type="submit">Sign Up</button>
+ </fieldset>
+
+   
+ </form>
+</div>
+
+
+<!-- Footer -->
+<footer>
+       <p class="footer-p">Copyright The Code Review</p>
+</footer>
+ 
+</body>
+</html>
